@@ -1,0 +1,170 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Montserrat', 'Nunito', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Color de fondo claro */
+    color: #333; /* Color de texto oscuro */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para el modo oscuro */
+body.dark {
+    background-color: #1a1a1a; /* Color de fondo oscuro */
+    color: #e0e0e0; /* Color de texto claro */
+}
+
+/* Contenedor principal */
+#app {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del ícono de cambio de tema */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333; /* Color del ícono en modo claro */
+    transition: color 0.3s;
+}
+
+/* Color del ícono en modo oscuro */
+body.dark .theme-toggle {
+    color: #e0e0e0; /* Color del ícono en modo oscuro */
+}
+
+/* Estilo del temporizador */
+#timer {
+    font-size: 15vw;
+    font-weight: bold;
+    margin: 0;
+    color: inherit; /* Hereda el color del texto */
+}
+
+/* Estilos para los botones */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    margin: 5px;
+    background: none;
+    border: 2px solid currentColor; /* Borde del botón en color actual */
+    color: inherit; /* Hereda el color del texto */
+    transition: background-color 0.3s, color 0.3s, transform 0.1s ease-in-out;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Efecto al presionar el botón */
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.buttons button:hover {
+    background-color: currentColor; /* Color de fondo en hover */
+    color: #f0f0f0; /* Color de texto en hover */
+}
+
+/* Estilos de la modal */
+.modal-content {
+    font-size: 1rem;
+    background-color: #f0f0f0; /* Fondo de la modal en modo claro */
+    color: #333; /* Texto de la modal en modo claro */
+    border: 1px solid #ccc; /* Borde de la modal */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Estilos de la modal en modo oscuro */
+body.dark .modal-content {
+    background-color: #333; /* Fondo de la modal en modo oscuro */
+    color: #e0e0e0; /* Texto de la modal en modo oscuro */
+    border: 1px solid #666; /* Borde de la modal en modo oscuro */
+}
+
+/* Estilos del footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0; /* Fondo del footer en modo claro */
+    color: #333; /* Texto del footer en modo claro */
+    font-size: 0.9rem;
+}
+
+/* Estilos del footer en modo oscuro */
+body.dark footer {
+    background-color: #1a1a1a; /* Fondo del footer en modo oscuro */
+    color: #e0e0e0; /* Texto del footer en modo oscuro */
+}
+
+/* Estilos de los inputs en la modal */
+.form-control {
+    background-color: #f0f0f0; /* Fondo de los inputs en modo claro */
+    color: #333; /* Texto de los inputs en modo claro */
+    border: 1px solid #ccc; /* Borde de los inputs */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%;
+    max-width: 300px; /* Ancho máximo de los inputs */
+}
+
+/* Estilos de los inputs en modo oscuro */
+body.dark .form-control {
+    background-color: #444; /* Fondo de los inputs en modo oscuro */
+    color: #e0e0e0; /* Texto de los inputs en modo oscuro */
+    border: 1px solid #666; /* Borde de los inputs en modo oscuro */
+}
+
+/* Estilos de los enlaces */
+a {
+    color: inherit; /* Hereda el color del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+a:hover {
+    color: #007bff; /* Color de enlace en hover */
+}
+
+/* Estilos para listas */
+ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0;
+}
+
+li {
+    margin: 5px 0; /* Espaciado entre elementos de la lista */
+    color: inherit; /* Hereda el color del texto */
+}
+
+footer a {
+    color: inherit; /* Hereda el color del texto del footer */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+footer a:hover {
+    color: inherit; /* Mantiene el color al pasar el mouse */
+}
